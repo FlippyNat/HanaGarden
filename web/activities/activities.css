@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.intro{
+    margin-top: 50px;
+    
+}
+
+.intro {
+    text-align: center;
+}
+
+
+
+.activitybox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px;
+    background-color: rgba(255, 230, 249,0.5);
+}
+
+.activitybox > img {
+    width: 40%;
+    height: 40%;
+    margin: 2.5%;
+
+}
+
+.activityboxh3 {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.activityboxtext {
+    align-self: center;
+    flex-grow: 1;
+    background-color: rgba(255, 204, 255, 0.5);
+    padding:40px 80px;
+    margin: 2.5%;
+    height: 60%;
+}

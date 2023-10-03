@@ -1,0 +1,28 @@
+article{
+    display: flex;
+    background-color: rgba(255, 230, 249,0.5);
+    width: 80%;
+    margin: 50px;
+    margin-left: 140px;
+    padding: 40px;
+}
+
+article  p {
+    text-align: center;
+    padding: 30px;
+}
+
+#desc p {
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+#details p{
+    font-size: 22px;
+    margin-top: 50px
+}
+
+article img {
+    border: rgb(216, 116, 211) solid 4px;
+    border-radius: 8px;
+}

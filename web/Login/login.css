@@ -1,0 +1,160 @@
+
+.flower{
+    height:110%;
+    width:100%;
+    background-position:center; 
+    background-size:cover;
+    position:relative;
+
+}
+
+.form-box{
+    width: 375px;
+    height: 550px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    box-shadow: 20px 20px 20px 20px rgba(255,192,203, 0.342);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgba(255,192,203, 0.342);
+    border-radius:30px;
+}
+
+.tonggle-btn{
+    padding: 10.5px 30px;
+    cursor: pointer;
+    background:  transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,192,203, 0.342), rgba(177, 114, 124, 0.342));
+    border-radius: 30px;
+    transition: .5s;
+}
+
+
+.input-group{
+    top:180px;
+    position: absolute;
+    width: 285px;
+    transition: .8s;
+}
+
+.input-group a{
+    text-decoration:none;
+    color:rgb(177, 114, 124);
+}
+
+
+.input-field{
+    font-size:1em;
+    width: 100%;
+    padding: 0;
+    margin: 30px 0 0 0;
+    line-height: 0;
+    border-left: 0;
+    border-top: 0;
+    border-right:0;
+    border-bottom: 0.5px solid #999;
+    outline: none;
+    background: transparent;   
+}
+
+
+
+.submit{
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, rgba(255,192,203, 0.342), rgba(177, 114, 124, 0.342));
+    border: 0;
+    outline: none;
+    border-radius:30px;
+
+}
+
+.reset{
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px 30px 0 80px;
+    background: linear-gradient(to right, rgba(228, 236, 114, 0.836), rgb(253, 19, 2));
+    border: 0;
+    outline: none;
+    border-radius:30px;
+
+}
+
+.back{
+    width: 70%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px 30px 0 95px;
+    background: linear-gradient(to right, rgb(226, 192, 240), rgb(173, 10, 238));
+    border: 0;
+    outline: none;
+    border-radius:30px;
+
+}
+
+.checkbox{
+    margin: 30px 10px 30px 0;
+}
+
+h4 {
+    margin: 92px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    color:red;
+}
+
+span.login{
+    color: #959;
+    font-size: 14px;
+    bottom: 63px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+    
+}
+
+.forgot{
+    font-size:1em;
+    width: 120%;
+    padding: 0;
+    margin: 20px;
+    line-height: 0;
+    border-left: 0;
+    border-top: 0;
+    border-right:0;
+    border-bottom: 0.5px solid #999;
+    outline: none;
+    background: transparent;   
+}
+

@@ -1,0 +1,46 @@
+.cinfo {
+    font-size: 30px;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    border: 6px rgb(230, 204, 255) groove;
+    margin: 160px;
+    margin-bottom: 120px;
+    margin-top: 60px;
+    background-color: rgba(255, 230, 249,0.5);
+}
+
+#map {
+    
+    border: 8px rgb(230, 204, 255) groove;
+    
+}
+
+#address {
+    font-size: 28px;
+    
+    margin-bottom: 30px;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(255, 230, 249,0.5);
+    border: 6px rgb(230, 204, 255) groove;
+    border-top: none;
+}
+
+#suggest {
+    padding: 15px;
+    padding-left: 78px;
+    width: 45%;
+    background-color: rgba(255, 230, 249,0.5);
+    margin-bottom: 40px;
+    border: 8px rgb(230, 204, 255) groove;
+}
+
+#desc {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}

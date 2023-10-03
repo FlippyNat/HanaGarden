@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+fieldset {
+    margin: 20px 15%;
+}
+
+.btm {
+    margin: 10px 0px;
+}
+/*ORDER FORM*/
+
+.ordertable {
+    margin-bottom: 100px;
+}
+
+.ordertable, .ordertable th,.ordertable td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    line-height: 2em;
+    padding: 0px 10px;
+}
+
+.prodflo {
+    display: none;
+}
+
+.ordertable td {
+    text-align: right;
+}
+
+input[type=button],input[type=submit] {
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+#totalamounttext {
+    border-left-style: hidden;
+    
+}
+

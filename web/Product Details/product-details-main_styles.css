@@ -1,0 +1,404 @@
+*, *::before, *::after {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transform-style: preserve-3d;
+    background: linear-gradient(-45deg, #FDE8E2, white );
+    background-size: 500% 500%;
+    animation: change 5s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {    background-position: 0 50%;}
+    50% {    background-position: 100% 50%;}
+    100% {    background-position: 0 50%;}
+}
+
+/* HEADER */
+header {
+    height: 117px;
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 1px;
+    padding-bottom: 10px;
+    margin: auto;
+    background: white;
+    z-index: 100; /*to ensure nav is the topmost layer above everything else*/
+}
+
+.nav-list {
+    list-style-type: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.nav-list li {
+     display: inline-block;
+     position: relative;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #640E23;
+    padding: 5px 20px;
+    border: solid transparent;
+    transition: 0.6s ease;
+}
+
+.nav-list li a:hover {
+    color: pink;
+}
+
+.main-icons {
+    color: black;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1500;
+    display: none; /*to hide it*/
+}
+
+.sub-nav-list {
+    display: block;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    border-top: 4px solid lightpink;
+    z-index: 100;
+    top: 7rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+}
+
+.sub-nav-list li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-list li:hover > .sub-nav-list {
+    top: 1.5rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: auto;
+    display: flex;
+}
+
+/* TABLE */
+table {
+    margin: 55px;
+}
+
+/* IMAGE SLIDESHOW */
+.slideshow-container img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+#slide1 {
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* PRODUCT DETAILS */
+.product-container {
+    padding: 40px;
+    color: black;
+    font-size: 1.1em;
+}
+
+.product-detail h1 {
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.checked{
+    color: orange;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.before {
+    text-decoration: line-through;
+}
+
+.after {
+    color: red;
+}
+
+.description h5 {
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: rgba(0,0,0,0.7);
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.description h2 a {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #FDE8E2;
+    color: #640E23;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(white, rgba(0,0,0,0.05)) ;
+    color: #6A6B6D;
+    height: 450px;
+    position: relative;
+    letter-spacing: 1px;
+    max-height: fit-content;
+    border-top-style: solid;
+    border-top-color: lightgray;
+    border-top-width: 1px;
+}
+
+.footer .footer-content {
+    height: 400px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {   /*style for all three footer sections*/
+    flex: 1;
+    padding: 25px;
+    border: 1px solid white;
+}
+
+footer .footer-content h1 span {
+    letter-spacing: 2px;
+    font-family: 'Tenor Sans';
+    color: #640E23;
+    font-size: 1.5;
+}
+
+footer .footer-content h2 {
+    font-size: 1.3em;
+    color: #640E23;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+footer .footer-content p {
+    font-size: 0.9em;
+    line-height: 25px;
+}
+
+.footer .footer-content .about .contact span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .about .contact span a {
+    text-decoration: none;
+    color: #640E23;
+}
+
+.footer .footer-content .about .contact span a:hover {
+    color: rgb(0,0,0);
+}
+
+.footer .footer-content .about .contact span a:active {
+    color: rgb(0,0,0);
+}
+
+.footer .footer-content .about .socials a {
+    border: 1px solid gray;
+    width: 40px;
+    height: 37px;
+    padding-top: 6px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    color: #6A6B6D;
+}
+
+.footer .footer-content .about .socials a:hover {
+    border: 1px solid #640E23;
+    color: #640E23;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .info ul a {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1em;
+    text-align: left;
+    color: #6A6B6D;
+    text-decoration: none;
+    margin-left: 25px;
+    letter-spacing: 1px;
+}
+
+.footer .footer-content .info ul a:hover {
+    color: black;
+    margin-left: 40px;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .newsletter .newsletter-input {
+    background: #FDE8E2;
+    color: #640E23;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.footer .footer-content .newsletter .newsletter-input:focus {
+    background: #FDE8E2;
+    color: #640E23;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.footer .footer-content .newsletter .subcribe-button {
+    background:#FDE8E2;
+    color: #640E23;
+    margin-bottom: 10px;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.footer .footer-bottom {
+    background: white;
+    color: black;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+    font-size: 0.8em;
+}

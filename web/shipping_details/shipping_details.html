@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="florist,flower,cake,weddings,decoration,beverage" />
+    <title>Shipping Details | Hana's Garden</title>
+    <link href="../nav-footer_styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="shipping_details.css">
+    
+    <script src="shipping_details.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body onload="fillin();">
+    <header>
+        <nav class="main">
+            <div class="logo">
+                <a href="../home/home.html"><img src="../Hana's Garden Logo.png"></a>
+            </div>
+
+            <div class="main-icons">
+                <i class="icon ion-md-menu"></i>
+                <i class="icon ion-md-close"></i>
+            </div>
+
+            <ul class="nav-list">
+                <li>
+                    <a href="../Products/products.html">Products
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                    <ul class="sub-nav-list">
+                        <li><a href="../Flower/flowers.html">Flowers</a></li>
+                        <br>
+                        <li><a href="../Food&Beverage/food&beverage.html">Food & Beverage</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../About Us/about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a>Occasional Promotions
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                
+                    <ul class="sub-nav-list">
+                        <li><a href="../Everyday/everyday.html">Everyday</a></li>
+                        <br>
+                        <li><a href="../Love/love.html">Love</a></li>
+                        <br>
+                        <li><a href="../Season/season.html">Seasonal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Services/services.html">Services
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                    <ul class="sub-nav-list">
+                        <li><a href="../Events/events.html">Event</a></li>
+                        <br>
+                        <li><a href="../Weddings/weddings.html">Wedding</a></li>
+                        <br>
+                        <li><a href="../Decoration/decoration.html">Decoration</a></li>
+                    </ul>
+                </li>                    
+                <li>
+                    <a>Workshops & Activities
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                
+                    <ul class="sub-nav-list">
+                        <li><a href="../workshops/workshops.html">Workshops</a></li>
+                        <br>
+                        <li><a href="../activities/activities.html">Activities</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../vacancy/vacancy.html">Vacancy</a>
+                </li>
+                <li>
+                    <a href="../Contact Us/contact us.html">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="../order/order.html"><img src="../shopping-cart-icon.png" alt="cart" width="40px" style="position: fixed; z-index: 100; top: 32px; right: 110px; opacity: 0.4;"></a>
+        <a href="../Login/login.html"><img src="../login.png" alt="login" width="40px" style="position: fixed; z-index: 100; top: 30px; right: 40px; opacity: 0.4;"></a>
+    </header>
+    
+    <div align="center">
+        <h1 style="margin: 20px;">Shipping Details</h1>
+        <form action="../home/home.html" method="POST" name="detailsform" id="detailsform" onsubmit=" return submitform(document.getElementById('dname').value, document.getElementById('dtel').value,document.getElementById('addr').value, document.getElementById('poscode').value,document.getElementById('city').value,document.getElementById('state').selectedIndex,document.getElementById('paychoice').selectedIndex,document.getElementById('cardnum').value)">
+            <table id="infodetails">
+                <tr>
+                    <td><label for="dname">Name :</label></td>
+                    <td><input type="text" name="dname" id="dname" /></td>
+                </tr>
+                <tr>
+                    <td><label for="dtel">Tel :</label></td>
+                    <td><input type="tel" name="dtel" id="dtel" /></td>
+                </tr>
+            
+                <tr>
+                    <td><label for="addr">Address :</label></td>
+                    <td><input type="text" name="addr" id="addr" size="40" /></td>
+                </tr>
+                <tr>
+                    <td><label for="poscode">Postcode :</label></td>
+                    <td><input type="text" name="poscode" id="poscode" size="8" maxlength="5" minlength="5" /></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City :</label></td>
+                    <td><input type="text" name="city" id="city" /></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State/Federal Territory :</label></td>
+                    <td>
+                        <select name="state" id="state">
+                            <option value="">----Select----</option>
+                            <option value="Perlis">Perlis</option>
+                            <option value="Kedah">Kedah</option>
+                            <option value="Pulau Pinang">Pulau Pinang</option>
+                            <option value="Perak">Perak</option>
+                            <option value="Selangor">Selangor</option>
+                            <option value="Kuala Lumpur">Kuala Lumpur</option>
+                            <option value="Melaka">Melaka</option>
+                            <option value="Negeri Sembilan">Negeri Sembilan</option>
+                            <option value="Johor">Johor</option>
+                            <option value="Kelantan">Kelantan</option>
+                            <option value="Terengganu">Terengganu</option>
+                            <option value="Pahang">Pahang</option>
+                            <option value="Putrajaya">Putrajaya</option>
+                            <option value="Sarawak">Sarawak</option>
+                            <option value="Sabah">Sabah</option>
+                            <option value="Labuan">Labuan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="paychoice">Select payment method :</label></td>
+                    <td>
+                        <select name="paychoice" id="paychoice" onchange="cardnumhide();">
+                            <option value="">----Select----</option>
+                            <option value="Cash on delivery">Cash on delivery</option>
+                            <option value="Visa">Visa</option>
+                            <option value="MasterCard">MasterCard</option>
+                            <option value="American Express">American Express</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cardnum">Card Number :</label></td>
+                    <td><input type="text" name="cardnum" id="cardnum" maxlength="16" minlength="16" placeholder="Skip this." disabled /></td>
+                </tr>
+            </table>
+
+            <h1>Your Order</h1>
+
+            <table>
+                <tr>
+                    <th>Products</th>
+                    <th>Price (RM)</th>
+                    <th>Quantity</th>
+                    <th>Amount (RM)</th>
+                </tr>
+                <tr id="tr1">
+
+                </tr>
+                <tr id="tr2">
+
+                </tr>
+                <tr id="tr3">
+
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">
+                        <input type="button" value="Reset Form" onclick="resetinfo();">
+                        <input type="submit" value="Order now!">
+                        Total Amount:
+                    </td>
+                    <td id="dtotalamount"></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1><span>HANA'S GARDEN</span></h1>
+                    <br>
+                    <p>Malaysia's most popular florist, Hana's Garden is all about creating memories with your loved ones. This is a one stop place for you to find the perfect flower for that moment of happiness.</p>
+                    <br>
+                    <div class="contact">
+                        <span><i class="fa fa-phone"></i> &nbsp; Phone:<a href="tel:+60123456789"> 012 - 3456789</a></span>
+                        <br>
+                        <span><i class="fa fa-envelope"></i> &nbsp; Email:<a href="mailto:hanasgarden@gmail.com"> hanasgarden@gmail.com</a></span>
+                    </div>
+                    <br>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/bloomthis/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bloomthis/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/floristmagazine?lang=en"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCbJINtwDRB-0lvaqJFH7L_g"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section info">
+                    <h2>Information</h2>
+                    <br>
+                    <ul>
+                        <a href="https://www.flowerchimp.com/pages/faq"><li>FAQs</li></a>
+                        <a href="../vacancy/vacancy.html"><li>Vacancy</li></a>
+                        <a href="https://www.flowerchimp.com/pages/terms-conditions"><li>Terms & Conditions</li></a>
+                        <a href="https://www.flowerchimp.com/pages/privacy-policy"><li>Privacy Policy</li></a>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h2>Newsletter</h2>
+                    <br>
+                    <p>Sign up to be kept up to date with our latest offer and exclusive deals and stand a chance to get 10% off your first order.</p>
+                    <br>
+                    <form action="home.html" method="post">
+                        <input type="email" name="email" id="email" class="newsletter-input" placeholder="Enter your email address">
+                        <br>
+                        <input type="submit" class="subcribe-button" value="SUBCRIBE">
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2020 Hana's Garden | hanasgarden.com | Designed by Hana
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

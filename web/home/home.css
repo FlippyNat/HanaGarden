@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+#vacancymsg {
+    position: fixed;
+    background-color: plum;
+    right: 0px;
+    padding:10px 28px 10px 10px;
+    vertical-align: middle;
+    width: 28%;
+    top: 117px;
+    display: initial;
+    line-height: 1.5em;
+    font-size: 0.95em;
+
+}
+
+.vacancyhere a:visited,.vacancyhere a:link {
+    color: blue;
+}
+
+.vacancyhere a:hover, .vacancyhere a:active {
+    color: yellow;
+}
+
+
+.intro {
+    margin-top: 100px;
+    
+    width: 1210px;
+    
+}
+
+
+.intro > img {
+    width: 100%;
+}
+
+
+.banner {
+    margin: 20px;
+}
+
+.pro,.food {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.probox,.foodbox {
+    
+    margin: 15px;
+}
+.probox >img,.foodbox >img {
+    width: 100%;
+    display: block;
+    
+}
+

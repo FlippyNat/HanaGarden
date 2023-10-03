@@ -1,0 +1,53 @@
+
+article{
+    font-size: 40px;
+    background-color: rgba(255, 230, 249,0.5);
+    text-align: center;
+    padding: 50px;
+    margin: 80px;
+}
+
+section {
+    margin-bottom: 100px;
+    
+}
+
+h3 {
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+    background-color: rgba(255, 230, 249,0.5);
+    margin-left: 130px;
+}
+
+
+
+
+.container {
+    position: relative;
+    float: left;
+    
+    text-shadow: rgb(77, 0, 77) 3px 3px 4px;
+    font-weight: bold;
+    font-size: 30px;
+    
+        
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container img {
+    border: rgb(216, 116, 211) solid 4px;
+    border-radius: 100px;
+    margin: 60px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,115 @@
+#vacancyIntro {
+    margin-top: 10%;
+}
+
+div#vacancyIntro > *, div#vacancyIntro ul{
+    
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+div#vacancyIntro b {
+    margin-left: 5%;
+    
+}
+
+blockquote {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 230, 249,0.5);
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+blockquote:nth-of-type(2),blockquote:nth-of-type(3){
+    margin-top: 50px;
+}
+
+blockquote > img {
+   width: 40%;
+   height: 40%;
+   margin: 2.5%;
+   
+}
+
+blockquote h2 {
+    text-align: center;
+
+}
+blockquote > div {
+    background-color: rgba(255, 204, 255, 0.5);
+    align-self: center;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 2.5%;
+    width: 40%;
+   
+    
+}
+blockquote > div > div> ul {
+   list-style-position: inside;
+   list-style-image: url(tick_icon.png);
+   
+    
+}
+
+table.tableform {
+    padding-top: 10px;
+}
+
+table.tableform tr td {
+    border: 1px solid black;
+    
+}
+legend {
+    text-align: center;
+    text-transform: capitalize;
+}
+.tableform td:nth-of-type(odd) {
+    background-color: rgba(255, 230, 249,0.5);
+}
+
+.tableform tr:last-child td:last-of-type,.tableform tr:nth-last-of-type(2) td {
+    background-color: white;
+    border: white;
+}
+
+.tableform td {
+    padding: 5px;
+}
+
+input, textarea {
+    transition: background-color .3s;
+}
+
+input:focus, textarea:focus {
+    background-color: rgba(255, 204, 243,0.5);
+    font-weight: 600;
+}
+
+.gender {
+    margin-right: 10px;
+}
+
+input[type=submit], input[type=reset] {
+    border-radius: 0%;
+}
+
+.tdSubReset {
+    text-align: center;
+}
+
+input[type=submit], input[type=reset] {
+    width: 150px;
+    line-height: 340%;
+}
+
+input[type=submit] {
+    margin-right: 40px;
+}
+
+input[type=reset] {
+margin-left: 40px;
+}

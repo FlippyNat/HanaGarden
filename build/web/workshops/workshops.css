@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+.intro {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.intro li {
+    list-style-type: disc;
+}
+
+#remind {
+    animation-name: changingcolor;
+    animation-timing-function: unset;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    margin-left: 11%;
+    margin-right: 11%;
+    padding: 2%;
+    text-align: center ;
+}
+
+@keyframes changingcolor {
+    0%{color: yellow;background-color: black;}
+    50%{background-color: yellow;color: black;}
+    100%{color: yellow;background-color: black;}
+}
+
+.workshopsblock {
+    margin: 50px;
+    background-color: rgba(255, 230, 249,0.5);
+    overflow: auto;
+    display: flex;
+    
+}
+
+.workshopsblock img {
+    
+    margin: 50px;
+}
+.workshopsblocktext {
+    background-color: rgba(255, 204, 255, 0.5);
+    margin: 50px;
+    width: 50%;
+    padding: 10px;
+    margin: 2.5%;
+}
+
+.workshopsblocktext tr{
+    line-height: 2em;
+}
+
+.workshopsblocktext td:nth-of-type(even) {
+    padding-left: 20px;
+}
+
+.workshopsblocktext ul {
+    list-style-position: inside;
+    font-weight: bold;
+}
+
+.calendernform{
+    display: flex;
+}
+.calenderdiv{
+    margin-bottom: 20px;
+    
+}
+
+.calender {
+    border: 1px black solid ;
+    border-collapse: collapse;
+    margin:0px 50px 50px 100px;
+    
+}
+
+.calender td, .calender th {
+    border: 1px black solid;
+    width: 80.8px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#emptyrow {
+    border-left: white 1px solid;
+    border-right: white 1px solid;
+}
+
+.firstmonth {
+    background-color: rgba(65, 125, 176,0.5);
+}
+
+.secondmonth {
+    background-color: #98ff98;
+}
+
+.captiondiv{
+    margin-top: 100px;
+    
+}
+#firstmonth ,#secondmonth{
+    
+    margin-left: 100px;
+    margin-right: 7px;
+    padding: 3% 4%;
+    border-radius: 10px;
+    
+    
+    
+}
+
+
+.formtable{
+    
+    margin-right: 25%;
+}
+.formtable tr {
+    line-height: 2em;
+}
+.formtable input,.formtable select {
+    padding: 1px 0px;
+}
+.formtable td:nth-of-type(odd){
+    width: 300px;
+}
+.formtable td:nth-of-type(even) {
+    padding-left: 20px;
+}
+#specialtd{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+#submitbutton {
+    padding: 15px;
+    margin: 10px 30%;
+    background-color: hsl(300, 100%, 81%);
+    font-size: 1.1em;
+    color: white;
+    border-color: hsl(300, 100%, 50%);
+    border-radius: 20px;
+    
+}
+
